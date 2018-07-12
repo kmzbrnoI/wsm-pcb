@@ -16441,6 +16441,8 @@ by R. Vogg  15.March.2002</description>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="220R"/>
 <part name="JPWR" library="pinhead" deviceset="PINHD-1X2" device="" value="PINHEAD"/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -16489,7 +16491,7 @@ by R. Vogg  15.March.2002</description>
 <instance part="IC2" gate="G$1" x="60.96" y="63.5"/>
 <instance part="GND9" gate="1" x="88.9" y="53.34"/>
 <instance part="R9" gate="G$1" x="78.74" y="63.5"/>
-<instance part="P+9" gate="G$1" x="27.94" y="71.12"/>
+<instance part="P+9" gate="G$1" x="27.94" y="86.36"/>
 <instance part="C5" gate="A" x="27.94" y="63.5" rot="MR0"/>
 <instance part="GND10" gate="1" x="27.94" y="53.34"/>
 <instance part="C6" gate="A" x="93.98" y="66.04"/>
@@ -16527,6 +16529,8 @@ by R. Vogg  15.March.2002</description>
 <instance part="R13" gate="G$1" x="226.06" y="99.06"/>
 <instance part="JPWR" gate="G$1" x="119.38" y="81.28"/>
 <instance part="SUPPLY4" gate="G$1" x="109.22" y="88.9"/>
+<instance part="LED4" gate="G$1" x="35.56" y="78.74" rot="R90"/>
+<instance part="R14" gate="G$1" x="48.26" y="73.66" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17030,6 +17034,8 @@ by R. Vogg  15.March.2002</description>
 <pinref part="IC2" gate="G$1" pin="STAT"/>
 <wire x1="50.8" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
 <label x="48.26" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="60.96" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="ADC7"/>
@@ -17042,9 +17048,13 @@ by R. Vogg  15.March.2002</description>
 <pinref part="IC2" gate="G$1" pin="VDD"/>
 <wire x1="50.8" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="G$1" pin="VCC/2"/>
-<wire x1="27.94" y1="66.04" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="66.04" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C5" gate="A" pin="+"/>
 <junction x="27.94" y="66.04"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="27.94" y1="78.74" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
+<junction x="27.94" y="78.74"/>
 </segment>
 <segment>
 <pinref part="TP3" gate="G$1" pin="TP"/>
@@ -17124,6 +17134,13 @@ by R. Vogg  15.March.2002</description>
 <wire x1="233.68" y1="99.06" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="93.98" x2="233.68" y2="99.06" width="0.1524" layer="91"/>
 <junction x="233.68" y="99.06"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="48.26" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
