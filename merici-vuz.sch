@@ -16158,6 +16158,79 @@ Cream on SMD OFF.&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="v-reg-lowdrop">
+<description>Low drop voltage regulators</description>
+<packages>
+<package name="SO08">
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<smd name="5" x="1.905" y="2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="6" x="0.635" y="2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="7" x="-0.635" y="2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="8" x="-1.905" y="2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="1" x="-1.905" y="-2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="-2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="-2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="-2.54" dx="2.54" dy="0.635" layer="1" rot="R90"/>
+<text x="-2.8194" y="-3.302" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.2672" y="-3.6322" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.159" y1="1.905" x2="-1.651" y2="3.175" layer="21"/>
+<rectangle x1="-0.889" y1="1.905" x2="-0.381" y2="3.175" layer="21"/>
+<rectangle x1="0.381" y1="1.905" x2="0.889" y2="3.175" layer="21"/>
+<rectangle x1="1.651" y1="1.905" x2="2.159" y2="3.175" layer="21"/>
+<rectangle x1="-2.159" y1="-3.175" x2="-1.651" y2="-1.905" layer="21"/>
+<rectangle x1="-0.889" y1="-3.175" x2="-0.381" y2="-1.905" layer="21"/>
+<rectangle x1="0.381" y1="-3.175" x2="0.889" y2="-1.905" layer="21"/>
+<rectangle x1="1.651" y1="-3.175" x2="2.159" y2="-1.905" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LE33">
+<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.588" y="8.636" size="2.54" layer="95">&gt;NAME</text>
+<text x="-5.588" y="-11.176" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="INH" x="-10.16" y="2.54" length="short" direction="in"/>
+<pin name="GND3" x="12.7" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="12.7" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="GND1" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<pin name="GND2" x="-10.16" y="-5.08" length="short" direction="pwr"/>
+<pin name="GND" x="12.7" y="-2.54" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LE33" prefix="IC">
+<description>Very low drop voltage regulator with inhibit</description>
+<gates>
+<gate name="G$1" symbol="LE33" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND1" pad="3"/>
+<connect gate="G$1" pin="GND2" pad="6"/>
+<connect gate="G$1" pin="GND3" pad="7"/>
+<connect gate="G$1" pin="INH" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Jan Horacek"/>
@@ -16191,14 +16264,14 @@ Cream on SMD OFF.&lt;br&gt;
 <part name="U1" library="microUSB" deviceset="USB" device="&quot;&quot;"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC/2" device="" value="VCC-USB"/>
-<part name="CON-BT" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="CON-BT" library="pinhead" deviceset="PINHD-1X6" device="" value="PINHEAD"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="CON-OPTO" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CON-OPTO" library="pinhead" deviceset="PINHD-1X3" device="" value="PINHEAD"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="360R"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-2X3" device=""/>
+<part name="CON-PROG" library="pinhead" deviceset="PINHD-2X3" device="" value="PINHEAD"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
@@ -16216,7 +16289,7 @@ Cream on SMD OFF.&lt;br&gt;
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="E1.8-4" value="4.7 uF"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C6" library="rcl" deviceset="CPOL-EU" device="E1.8-4" value="4.7 uF"/>
-<part name="CON-BAT" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="CON-BAT" library="pinhead" deviceset="PINHD-1X2" device="" value="PINHEAD"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="TP1" library="testpad" deviceset="PTR1" device="B2,54"/>
 <part name="TP2" library="testpad" deviceset="PTR1" device="B2,54"/>
@@ -16233,6 +16306,13 @@ Cream on SMD OFF.&lt;br&gt;
 <part name="TP7" library="testpad" deviceset="PTR1" device="B2,54"/>
 <part name="TP8" library="testpad" deviceset="PTR1" device="B2,54"/>
 <part name="TP9" library="testpad" deviceset="PTR1" device="B2,54"/>
+<part name="IC3" library="v-reg-lowdrop" deviceset="LE33" device=""/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
+<part name="C8" library="rcl" deviceset="CPOL-EU" device="E1.8-4" value="4.7 uF"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="P+12" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16267,7 +16347,7 @@ Cream on SMD OFF.&lt;br&gt;
 <instance part="R4" gate="G$1" x="119.38" y="38.1" rot="R90"/>
 <instance part="R5" gate="G$1" x="121.92" y="22.86"/>
 <instance part="P+6" gate="VCC" x="119.38" y="48.26"/>
-<instance part="JP1" gate="A" x="152.4" y="144.78"/>
+<instance part="CON-PROG" gate="A" x="152.4" y="144.78"/>
 <instance part="GND6" gate="1" x="165.1" y="134.62"/>
 <instance part="P+7" gate="VCC" x="165.1" y="157.48"/>
 <instance part="R6" gate="G$1" x="30.48" y="162.56" rot="R270"/>
@@ -16302,6 +16382,13 @@ Cream on SMD OFF.&lt;br&gt;
 <instance part="TP7" gate="G$1" x="218.44" y="73.66" rot="MR270"/>
 <instance part="TP8" gate="G$1" x="218.44" y="68.58" rot="MR270"/>
 <instance part="TP9" gate="G$1" x="218.44" y="63.5" rot="MR270"/>
+<instance part="IC3" gate="G$1" x="160.02" y="68.58"/>
+<instance part="C7" gate="G$1" x="142.24" y="71.12" rot="MR0"/>
+<instance part="GND15" gate="1" x="142.24" y="55.88"/>
+<instance part="SUPPLY3" gate="G$1" x="142.24" y="81.28"/>
+<instance part="C8" gate="A" x="180.34" y="71.12"/>
+<instance part="GND16" gate="1" x="180.34" y="55.88"/>
+<instance part="P+12" gate="VCC" x="180.34" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -16373,7 +16460,7 @@ Cream on SMD OFF.&lt;br&gt;
 <wire x1="114.3" y1="25.4" x2="114.3" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="CON-PROG" gate="A" pin="6"/>
 <wire x1="157.48" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="165.1" y1="142.24" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
@@ -16427,6 +16514,35 @@ Cream on SMD OFF.&lt;br&gt;
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="246.38" y1="58.42" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="INH"/>
+<wire x1="149.86" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="71.12" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="GND1"/>
+<wire x1="147.32" y1="66.04" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
+<junction x="147.32" y="66.04"/>
+<pinref part="IC3" gate="G$1" pin="GND2"/>
+<wire x1="149.86" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="142.24" y1="58.42" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<junction x="142.24" y="66.04"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="GND3"/>
+<wire x1="172.72" y1="71.12" x2="175.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="71.12" x2="175.26" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+<wire x1="172.72" y1="66.04" x2="175.26" y2="66.04" width="0.1524" layer="91"/>
+<junction x="175.26" y="66.04"/>
+<pinref part="C8" gate="A" pin="-"/>
+<wire x1="175.26" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="180.34" y1="58.42" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
+<junction x="180.34" y="66.04"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -16467,7 +16583,7 @@ Cream on SMD OFF.&lt;br&gt;
 <wire x1="119.38" y1="43.18" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="CON-PROG" gate="A" pin="2"/>
 <wire x1="157.48" y1="147.32" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="147.32" x2="165.1" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
@@ -16485,6 +16601,22 @@ Cream on SMD OFF.&lt;br&gt;
 <pinref part="TP5" gate="G$1" pin="TP"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 <wire x1="246.38" y1="78.74" x2="246.38" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VIN"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="142.24" y1="73.66" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<junction x="142.24" y="73.66"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VOUT"/>
+<pinref part="C8" gate="A" pin="+"/>
+<wire x1="172.72" y1="73.66" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="P+12" gate="VCC" pin="VCC"/>
+<wire x1="180.34" y1="73.66" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
+<junction x="180.34" y="73.66"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -16654,7 +16786,7 @@ Cream on SMD OFF.&lt;br&gt;
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="CON-PROG" gate="A" pin="1"/>
 <wire x1="149.86" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
 <label x="142.24" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16666,7 +16798,7 @@ Cream on SMD OFF.&lt;br&gt;
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="CON-PROG" gate="A" pin="3"/>
 <wire x1="149.86" y1="144.78" x2="142.24" y2="144.78" width="0.1524" layer="91"/>
 <label x="142.24" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16678,7 +16810,7 @@ Cream on SMD OFF.&lt;br&gt;
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="CON-PROG" gate="A" pin="5"/>
 <wire x1="149.86" y1="142.24" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
 <label x="142.24" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16693,7 +16825,7 @@ Cream on SMD OFF.&lt;br&gt;
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="CON-PROG" gate="A" pin="4"/>
 <wire x1="157.48" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
 <label x="165.1" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
