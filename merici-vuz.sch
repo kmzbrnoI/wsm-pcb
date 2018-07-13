@@ -10581,27 +10581,6 @@ www.irf.com&lt;p&gt;
 <wire x1="243.84" y1="144.78" x2="243.84" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LED1" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="91.44" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
-<label x="101.6" y="147.32" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LED2" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
-<wire x1="91.44" y1="144.78" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
-<label x="101.6" y="144.78" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="LED3" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="ADC6"/>
-<wire x1="91.44" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
-<label x="101.6" y="142.24" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="VCC-USB" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBUS"/>
@@ -10936,6 +10915,11 @@ www.irf.com&lt;p&gt;
 <wire x1="223.52" y1="134.62" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
 <label x="223.52" y="129.54" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
+<wire x1="91.44" y1="147.32" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
+<label x="101.6" y="147.32" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="LED-YEL" class="0">
 <segment>
@@ -10943,12 +10927,22 @@ www.irf.com&lt;p&gt;
 <wire x1="233.68" y1="134.62" x2="233.68" y2="129.54" width="0.1524" layer="91"/>
 <label x="233.68" y="129.54" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC5(ADC5/SCL)"/>
+<wire x1="91.44" y1="144.78" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
+<label x="101.6" y="144.78" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="LED-GR" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="134.62" x2="243.84" y2="129.54" width="0.1524" layer="91"/>
 <label x="243.84" y="129.54" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="ADC6"/>
+<wire x1="91.44" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
+<label x="101.6" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!RESET" class="0">
