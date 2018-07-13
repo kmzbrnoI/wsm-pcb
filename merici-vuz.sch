@@ -10448,7 +10448,7 @@ by R. Vogg  15.March.2002</description>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="CR1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
 <pinref part="Q1" gate="G$1" pin="2"/>
@@ -10458,7 +10458,7 @@ by R. Vogg  15.March.2002</description>
 <junction x="25.4" y="139.7"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="CR2" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
@@ -10724,21 +10724,21 @@ by R. Vogg  15.March.2002</description>
 <wire x1="76.2" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="LED-RED-R" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="223.52" y1="144.78" x2="223.52" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="LED-YEL-R" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="233.68" y1="144.78" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="LED-GR-R" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
@@ -10819,7 +10819,7 @@ by R. Vogg  15.March.2002</description>
 <label x="60.96" y="20.32" size="1.4224" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="OPTO-VCC" class="0">
 <segment>
 <pinref part="CON-OPTO" gate="A" pin="3"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -10927,14 +10927,14 @@ by R. Vogg  15.March.2002</description>
 <label x="101.6" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="CPU-REF" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="AREF"/>
 <wire x1="33.02" y1="149.86" x2="43.18" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="CHARGE-PROG" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="PROG"/>
@@ -10974,7 +10974,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="236.22" y1="58.42" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="CHARGE-STAT-LED" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="LED4" gate="G$1" pin="C"/>
