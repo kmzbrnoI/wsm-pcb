@@ -10259,7 +10259,7 @@ www.irf.com&lt;p&gt;
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0805" value="2M"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="220R"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="330R"/>
 <part name="SUPPLY5" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
 <part name="S-ON" library="switch-omron" deviceset="10-XX" device=""/>
