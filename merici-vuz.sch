@@ -9971,70 +9971,12 @@ www.irf.com&lt;p&gt;
 <pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
-<symbol name="P-MOS">
-<wire x1="0" y1="0" x2="-1.016" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="0.381" x2="-1.016" y2="-0.381" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="-0.381" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.032" x2="0" y2="2.794" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="0" x2="-0.508" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.508" y1="0" x2="-0.381" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-3.048" x2="1.27" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-3.048" x2="1.27" y2="-0.254" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-0.254" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="2.794" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="2.794" x2="0" y2="2.794" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="-0.762" x2="1.778" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-0.762" x2="1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0" x2="0.762" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="0" x2="1.778" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.032" x2="0" y2="-2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.032" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="2.032" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="0" x2="-0.889" y2="-0.127" width="0.254" layer="94"/>
-<wire x1="-0.889" y1="-0.127" x2="-0.889" y2="0.127" width="0.254" layer="94"/>
-<wire x1="-0.889" y1="0.127" x2="-0.508" y2="0" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-0.635" x2="1.524" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-0.635" x2="1.27" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.254" x2="1.016" y2="-0.635" width="0.254" layer="94"/>
-<circle x="0" y="2.794" radius="0.3592" width="0" layer="94"/>
-<circle x="0" y="2.032" radius="0.3592" width="0" layer="94"/>
-<circle x="0" y="-3.048" radius="0.3592" width="0" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="-2.54" x2="-1.524" y2="-1.27" layer="94"/>
-<rectangle x1="-2.032" y1="1.27" x2="-1.524" y2="2.54" layer="94"/>
-<rectangle x1="-2.032" y1="-0.762" x2="-1.524" y2="0.762" layer="94"/>
-<pin name="G" x="-5.08" y="2.54" visible="off" length="short" direction="pas"/>
-<pin name="D" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="S" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BSS123" prefix="Q">
 <description>&lt;b&gt;N-CHANNEL MOS FET&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="N-MOS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BSS84" prefix="Q">
-<description>&lt;b&gt;P-CHANNEL MOS FET&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="P-MOS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23">
@@ -10164,6 +10106,125 @@ www.irf.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-fet">
+<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
+&lt;p&gt;
+Symbols changed according to IEC617&lt;p&gt; 
+All types, packages and assignment to symbols and pins checked&lt;p&gt;
+Package outlines partly checked&lt;p&gt;
+&lt;p&gt;
+JFET = junction FET&lt;p&gt;
+IGBT-x = insulated gate bipolar transistor&lt;p&gt;
+x=N: NPN; x=P: PNP&lt;p&gt;
+IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
+m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
+m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
+c: N=N-channel; P=P-Channel&lt;p&gt;
+nnn=GDS:  gate, drain, source&lt;p&gt;
+2GDS: 2 x gate, drain, source&lt;p&gt;
+GnDS: gate, n x drain, source&lt;p&gt;
+GDSB: gate, drain, source, bulk&lt;p&gt;
+&lt;p&gt;
+by R. Vogg  15.March.2002</description>
+<packages>
+<package name="SO08-IRF">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt; SOIC 150 mil</description>
+<wire x1="2.159" y1="1.719578125" x2="-2.159" y2="1.719578125" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-1.7" x2="2.54" y2="-1.319003125" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.54" y1="1.338578125" x2="-2.159" y2="1.719578125" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.159" y1="1.719578125" x2="2.54" y2="1.338578125" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.54" y1="-1.319003125" x2="-2.159" y2="-1.7" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.159" y1="-1.7" x2="2.159" y2="-1.7" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.319003125" x2="2.54" y2="1.338578125" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.338578125" x2="-2.54" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.319003125" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.508" x2="-2.54" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.54" y1="-1.34" x2="2.54" y2="-1.34" width="0.1524" layer="21"/>
+<smd name="1" x="-1.905" y="-2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="8" x="-1.905" y="2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="2" x="-0.635" y="-2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="3" x="0.635" y="-2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="7" x="-0.635" y="2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="6" x="0.635" y="2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="4" x="1.905" y="-2.8" dx="0.72" dy="1.5" layer="1"/>
+<smd name="5" x="1.905" y="2.8" dx="0.72" dy="1.5" layer="1"/>
+<text x="2.8575" y="0" size="1.27" layer="27" font="vector" ratio="15" rot="R90" align="top-center">&gt;VALUE</text>
+<text x="-2.8575" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center">&gt;NAME</text>
+<rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
+<rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="-3.0734" x2="0.889" y2="-1.9304" layer="51"/>
+<rectangle x1="1.651" y1="-3.0988" x2="2.159" y2="-1.9558" layer="51"/>
+<rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
+<rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
+<rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P-MOSFET">
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="4.572" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-11.43" y="-1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="4.318" y="-0.254"/>
+<vertex x="3.302" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.54" y="0"/>
+<vertex x="1.524" y="0.762"/>
+<vertex x="1.524" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IRF7306" prefix="T">
+<gates>
+<gate name="A" symbol="P-MOSFET" x="0" y="0"/>
+<gate name="B" symbol="P-MOSFET" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08-IRF">
+<connects>
+<connect gate="A" pin="D" pad="7 8"/>
+<connect gate="A" pin="G" pad="2"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="5 6"/>
+<connect gate="B" pin="G" pad="4"/>
+<connect gate="B" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Jan Horacek"/>
@@ -10246,7 +10307,6 @@ www.irf.com&lt;p&gt;
 <part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
-<part name="Q2" library="transistor-small-signal" deviceset="BSS84" device="" value="IRLML6402PBF"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="R55" library="rcl" deviceset="R-EU_" device="R0805" value="2M"/>
 <part name="R56" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
@@ -10269,6 +10329,8 @@ www.irf.com&lt;p&gt;
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="CON-OSC" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="T1" library="transistor-fet" deviceset="IRF7306" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10344,15 +10406,11 @@ www.irf.com&lt;p&gt;
 <instance part="P+12" gate="VCC" x="180.34" y="55.88"/>
 <instance part="LED4" gate="G$1" x="35.56" y="78.74" rot="R90"/>
 <instance part="R14" gate="G$1" x="48.26" y="73.66" rot="R90"/>
-<instance part="Q2" gate="G$1" x="182.88" y="106.68" smashed="yes" rot="R90">
-<attribute name="VALUE" x="186.69" y="111.76" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="186.69" y="114.3" size="1.778" layer="95" rot="R180"/>
-</instance>
 <instance part="C9" gate="G$1" x="160.02" y="91.44" rot="MR0"/>
 <instance part="R55" gate="G$1" x="187.96" y="81.28" rot="R270"/>
 <instance part="R56" gate="G$1" x="198.12" y="96.52" rot="R270"/>
 <instance part="C10" gate="G$1" x="198.12" y="83.82" rot="MR0"/>
-<instance part="R15" gate="G$1" x="149.86" y="99.06"/>
+<instance part="R15" gate="G$1" x="152.4" y="99.06"/>
 <instance part="Q4" gate="G$1" x="180.34" y="91.44" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="175.26" y="95.25" size="1.778" layer="96" rot="MR270"/>
 <attribute name="NAME" x="177.8" y="95.25" size="1.778" layer="95" rot="MR270"/>
@@ -10373,6 +10431,12 @@ www.irf.com&lt;p&gt;
 <instance part="C6" gate="G$1" x="180.34" y="48.26"/>
 <instance part="CON-OSC" gate="A" x="213.36" y="111.76" rot="R180"/>
 <instance part="GND17" gate="1" x="223.52" y="101.6"/>
+<instance part="T1" gate="A" x="137.16" y="104.14" rot="R90"/>
+<instance part="T1" gate="B" x="182.88" y="104.14" smashed="yes" rot="R90">
+<attribute name="VALUE" x="179.07" y="110.49" size="1.778" layer="96"/>
+<attribute name="NAME" x="179.07" y="113.03" size="1.778" layer="95"/>
+</instance>
+<instance part="GND18" gate="1" x="134.62" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -10564,6 +10628,11 @@ www.irf.com&lt;p&gt;
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="223.52" y1="106.68" x2="223.52" y2="104.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="T1" gate="A" pin="G"/>
+<wire x1="134.62" y1="71.12" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -10632,10 +10701,10 @@ www.irf.com&lt;p&gt;
 <junction x="180.34" y="50.8"/>
 </segment>
 <segment>
-<pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="187.96" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <wire x1="190.5" y1="106.68" x2="190.5" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="T1" gate="B" pin="D"/>
 </segment>
 <segment>
 <pinref part="R56" gate="G$1" pin="1"/>
@@ -10927,20 +10996,20 @@ www.irf.com&lt;p&gt;
 <net name="START_GATE" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="99.06" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="93.98" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
 <junction x="160.02" y="99.06"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="96.52" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
 <wire x1="180.34" y1="96.52" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="99.06" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
 <junction x="167.64" y="99.06"/>
 <junction x="180.34" y="99.06"/>
+<pinref part="T1" gate="B" pin="G"/>
 </segment>
 </net>
 <net name="START_BUTTON" class="0">
@@ -10970,16 +11039,6 @@ www.irf.com&lt;p&gt;
 </net>
 <net name="BAT-RAW-VCC" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="99.06" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<junction x="142.24" y="106.68"/>
-<label x="139.7" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="CON-BAT" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="68.58" x2="109.22" y2="73.66" width="0.1524" layer="91"/>
@@ -10990,6 +11049,11 @@ www.irf.com&lt;p&gt;
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
 <junction x="93.98" y="68.58"/>
+</segment>
+<segment>
+<pinref part="T1" gate="A" pin="S"/>
+<wire x1="129.54" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+<label x="129.54" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED-RED" class="0">
@@ -11054,6 +11118,18 @@ www.irf.com&lt;p&gt;
 <wire x1="30.48" y1="157.48" x2="22.86" y2="157.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="157.48"/>
 <label x="22.86" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BAT-TRUE-VCC" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="99.06" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
+<junction x="144.78" y="106.68"/>
+<pinref part="T1" gate="B" pin="S"/>
+<pinref part="T1" gate="A" pin="D"/>
+<wire x1="142.24" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
