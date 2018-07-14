@@ -10755,6 +10755,23 @@ by R. Vogg  15.March.2002</description>
 <pinref part="P+5" gate="G$1" pin="VCC/2"/>
 <wire x1="30.48" y1="30.48" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
+<wire x1="43.18" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="G$1" pin="VCC/2"/>
+<wire x1="20.32" y1="68.58" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="20.32" y1="81.28" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
+<junction x="20.32" y="81.28"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<junction x="20.32" y="68.58"/>
+</segment>
+<segment>
+<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="P+11" gate="G$1" pin="VCC/2"/>
+<wire x1="236.22" y1="58.42" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BT-STATE" class="0">
 <segment>
@@ -10956,25 +10973,6 @@ by R. Vogg  15.March.2002</description>
 <pinref part="IC1" gate="G$1" pin="ADC7"/>
 <wire x1="91.44" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
 <label x="101.6" y="139.7" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VCC/2" class="1">
-<segment>
-<pinref part="IC2" gate="G$1" pin="VDD"/>
-<wire x1="43.18" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="P+9" gate="G$1" pin="VCC/2"/>
-<wire x1="20.32" y1="68.58" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="20.32" y1="81.28" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<junction x="20.32" y="81.28"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<junction x="20.32" y="68.58"/>
-</segment>
-<segment>
-<pinref part="TP3" gate="G$1" pin="TP"/>
-<pinref part="P+11" gate="G$1" pin="VCC/2"/>
-<wire x1="236.22" y1="58.42" x2="236.22" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CHARGE-STAT-LED" class="0">
