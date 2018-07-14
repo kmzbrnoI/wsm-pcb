@@ -10308,7 +10308,7 @@ by R. Vogg  15.March.2002</description>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="BLUE"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="2M"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
@@ -10316,7 +10316,7 @@ by R. Vogg  15.March.2002</description>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="2M"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
