@@ -10186,7 +10186,7 @@ by R. Vogg  15.March.2002</description>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Jan Horacek"/>
-<attribute name="VERSION" value="1.0"/>
+<attribute name="VERSION" value="1.1"/>
 </attributes>
 <variantdefs>
 </variantdefs>
