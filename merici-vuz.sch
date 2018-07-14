@@ -10233,8 +10233,11 @@ by R. Vogg  15.March.2002</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3" drill="0.45">
-<clearance class="0" value="0.3"/>
+<class number="0" name="default" width="0.3" drill="0">
+</class>
+<class number="1" name="bat-power" width="0.6" drill="0">
+</class>
+<class number="2" name="perf-power" width="0.4" drill="0">
 </class>
 </classes>
 <parts>
@@ -10641,7 +10644,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="134.62" y1="71.12" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="2">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
@@ -10745,7 +10748,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="243.84" y1="144.78" x2="243.84" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC-USB" class="0">
+<net name="VCC-USB" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBUS"/>
 <wire x1="22.86" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
@@ -10890,7 +10893,7 @@ by R. Vogg  15.March.2002</description>
 <label x="101.6" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VCC-BAT" class="0">
+<net name="VCC-BAT" class="2">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
@@ -10955,7 +10958,7 @@ by R. Vogg  15.March.2002</description>
 <label x="101.6" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VCC/2" class="0">
+<net name="VCC/2" class="1">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VDD"/>
 <wire x1="43.18" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
@@ -11049,7 +11052,7 @@ by R. Vogg  15.March.2002</description>
 <label x="101.6" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BAT-RAW-VCC" class="0">
+<net name="BAT-RAW-VCC" class="1">
 <segment>
 <pinref part="CON-BAT" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
@@ -11129,7 +11132,7 @@ by R. Vogg  15.March.2002</description>
 <label x="22.86" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BAT-POS-VCC" class="0">
+<net name="BAT-POS-VCC" class="2">
 <segment>
 <pinref part="CON-BT-POWER" gate="A" pin="3"/>
 <wire x1="81.28" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
