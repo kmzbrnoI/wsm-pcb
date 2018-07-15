@@ -10295,6 +10295,7 @@ by R. Vogg  15.March.2002</description>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
 <part name="S-ON" library="switch-tact" deviceset="DTSM-3" device="" value="P-DT2112C"/>
 <part name="S-OFF" library="switch-tact" deviceset="DTSM-3" device="" value="P-DT2112C"/>
+<part name="SUPPLY4" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
 </parts>
 <sheets>
 <sheet>
@@ -10411,6 +10412,7 @@ by R. Vogg  15.March.2002</description>
 <attribute name="NAME" x="212.09" y="80.645" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="214.63" y="80.645" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="SUPPLY4" gate="G$1" x="73.66" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -10881,6 +10883,12 @@ by R. Vogg  15.March.2002</description>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 <wire x1="243.84" y1="58.42" x2="243.84" y2="60.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="CON-BT-POWER" gate="A" pin="3"/>
+<wire x1="81.28" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="17.78" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+</segment>
 </net>
 <net name="BAT-SENSE" class="0">
 <segment>
@@ -11083,12 +11091,6 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="BAT-POS-VCC" class="2">
 <segment>
-<pinref part="CON-BT-POWER" gate="A" pin="3"/>
-<wire x1="81.28" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="17.78" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<label x="73.66" y="35.56" size="1.4224" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="99.06" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="99.06" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
@@ -11097,7 +11099,6 @@ by R. Vogg  15.March.2002</description>
 <pinref part="T1" gate="B" pin="S"/>
 <pinref part="T1" gate="A" pin="D"/>
 <wire x1="142.24" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
-<label x="154.94" y="106.68" size="1.4224" layer="95"/>
 </segment>
 </net>
 </nets>
