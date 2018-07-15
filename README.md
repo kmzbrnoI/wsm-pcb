@@ -21,8 +21,8 @@ This PCB was designed in Eagle 9.
 ## Credits
 
  * This project is inspired by the measure car designed by *Petr Travnik*.
- * The ON-OFF switch part is inspired by the RB3201 project if [RoboticsBrno
-   ](https://github.com/RoboticsBrno).
+ * The ON-OFF switch part is inspired by the RB3201 project of *[RoboticsBrno
+   ](https://github.com/RoboticsBrno)*.
  * Many thanks to *Michal Petrilak* for help with development of this project.
 
 ## License
