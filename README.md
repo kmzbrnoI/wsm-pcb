@@ -10,6 +10,9 @@ perforated wheel connected to an axis of a wheel of the car. The speed-data are
 transmitted via HC-05 bluetooth module to any device supporting SPP bluetooth
 profile.
 
+*We will add more information and resources here when the project reaches
+alpha-version. Currently, it is in development.*
+
 ## Toolkit
 
 This PCB was designed in Eagle 9.
