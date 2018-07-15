@@ -10191,11 +10191,11 @@ by R. Vogg  15.March.2002</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3" drill="0">
+<class number="0" name="default" width="0.3" drill="0.3">
 </class>
-<class number="1" name="bat-power" width="0.6" drill="0">
+<class number="1" name="bat-power" width="0.6" drill="0.6">
 </class>
-<class number="2" name="perf-power" width="0.4" drill="0">
+<class number="2" name="perf-power" width="0.4" drill="0.4">
 </class>
 </classes>
 <parts>
