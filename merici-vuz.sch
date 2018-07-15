@@ -10734,8 +10734,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="91.44" y1="124.46" x2="101.6" y2="124.46" width="0.1524" layer="91"/>
-<label x="101.6" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="124.46" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
+<label x="96.52" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BT-RXD" class="0">
@@ -10746,8 +10746,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD1(TXD)"/>
-<wire x1="91.44" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
-<label x="101.6" y="132.08" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<label x="96.52" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TP7" gate="G$1" pin="TP"/>
@@ -10763,8 +10763,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD0(RXD)"/>
-<wire x1="91.44" y1="134.62" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
-<label x="101.6" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
+<label x="96.52" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="TP8" gate="G$1" pin="TP"/>
@@ -10779,9 +10779,9 @@ by R. Vogg  15.March.2002</description>
 <label x="60.96" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="101.6" y="147.32" size="1.27" layer="95" xref="yes"/>
+<label x="96.52" y="147.32" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="101.6" y1="147.32" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="147.32" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BT-VCC" class="0">
@@ -10816,8 +10816,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="91.44" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
-<label x="101.6" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="129.54" x2="96.52" y2="129.54" width="0.1524" layer="91"/>
+<label x="96.52" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -10828,8 +10828,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
-<wire x1="91.44" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
-<label x="101.6" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="101.6" x2="96.52" y2="101.6" width="0.1524" layer="91"/>
+<label x="96.52" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -10840,8 +10840,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
-<wire x1="91.44" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
-<label x="101.6" y="99.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<label x="96.52" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -10852,8 +10852,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB3(MOSI/OC2)"/>
-<wire x1="91.44" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
-<label x="101.6" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
+<label x="96.52" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC-BAT" class="2">
@@ -10894,8 +10894,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
-<wire x1="91.44" y1="157.48" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
-<label x="101.6" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
+<label x="96.52" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CPU-REF" class="0">
@@ -10922,8 +10922,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="ADC7"/>
-<wire x1="91.44" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
-<label x="101.6" y="139.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<label x="96.52" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CHARGE-STAT-LED" class="0">
@@ -10992,8 +10992,8 @@ by R. Vogg  15.March.2002</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
-<wire x1="91.44" y1="106.68" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
-<label x="101.6" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
+<label x="96.52" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BAT-RAW-VCC" class="1">
@@ -11022,8 +11022,8 @@ by R. Vogg  15.March.2002</description>
 <wire x1="223.52" y1="134.62" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="149.86" x2="101.6" y2="149.86" width="0.1524" layer="91"/>
-<label x="101.6" y="149.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="149.86" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
+<label x="96.52" y="149.86" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="PC3(ADC3)"/>
 </segment>
 <segment>
@@ -11039,8 +11039,8 @@ by R. Vogg  15.March.2002</description>
 <label x="157.48" y="132.08" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="152.4" x2="101.6" y2="152.4" width="0.1524" layer="91"/>
-<label x="101.6" y="152.4" size="1.27" layer="95" xref="yes"/>
+<wire x1="91.44" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
+<label x="96.52" y="152.4" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
 </segment>
 <segment>
@@ -11056,9 +11056,9 @@ by R. Vogg  15.March.2002</description>
 <label x="157.48" y="129.54" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="101.6" y="154.94" size="1.27" layer="95" xref="yes"/>
+<label x="96.52" y="154.94" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="101.6" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
