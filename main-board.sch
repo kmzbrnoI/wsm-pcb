@@ -10173,11 +10173,11 @@ by R. Vogg  15.March.2002</description>
 <part name="U$1" library="frames" deviceset="FRAME_M1" device=""/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP" value="3,6864 MHz "/>
 <part name="IC1" library="atmel" deviceset="MEGA8" device="-AI" value="MEGA328-PB"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="YELLOW"/>
@@ -10201,13 +10201,13 @@ by R. Vogg  15.March.2002</description>
 <part name="CON-PROG" library="pinhead" deviceset="PINHD-2X3" device="" value="PINHEAD"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="680K"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="200K"/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10nF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="IC2" library="mcp73831" deviceset="MCP73831" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -10232,7 +10232,7 @@ by R. Vogg  15.March.2002</description>
 <part name="TP8" library="testpad" deviceset="PTR1" device="B1,27" value="PTR1B1,27"/>
 <part name="TP9" library="testpad" deviceset="PTR1" device="B1,27" value="PTR1B1,27"/>
 <part name="IC3" library="v-reg-lowdrop" deviceset="LE33" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -10241,9 +10241,9 @@ by R. Vogg  15.March.2002</description>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="Q4" library="transistor-small-signal" deviceset="BSS123" device="" value="TSM2302CX"/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10257,12 +10257,12 @@ by R. Vogg  15.March.2002</description>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
-<part name="CON-DEBUG" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="CON-DEBUG" library="pinhead" deviceset="PINHD-1X4" device="" value="PINHEAD"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor-fet" deviceset="IRF7306" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
-<part name="CON-BT-POWER" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="CON-BT-POWER" library="pinhead" deviceset="PINHD-1X3" device="" value="PINHEAD"/>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
 <part name="S-ON" library="switch-tact" deviceset="DTSM-3" device="" value="P-DT2112C"/>
 <part name="S-OFF" library="switch-tact" deviceset="DTSM-3" device="" value="P-DT2112C"/>
@@ -10277,8 +10277,8 @@ by R. Vogg  15.March.2002</description>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="Q1" gate="G$1" x="25.4" y="137.16" rot="R270"/>
 <instance part="IC1" gate="G$1" x="66.04" y="132.08"/>
-<instance part="C1" gate="G$1" x="17.78" y="134.62" rot="R90"/>
-<instance part="C2" gate="G$1" x="17.78" y="139.7" rot="MR270"/>
+<instance part="C1" gate="G$1" x="17.78" y="134.62" rot="MR270"/>
+<instance part="C2" gate="G$1" x="17.78" y="139.7" rot="R90"/>
 <instance part="GND1" gate="1" x="12.7" y="119.38"/>
 <instance part="P+1" gate="VCC" x="38.1" y="170.18"/>
 <instance part="C3" gate="G$1" x="38.1" y="114.3" rot="MR0"/>
