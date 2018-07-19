@@ -10441,12 +10441,12 @@ by R. Vogg  15.March.2002</description>
 <instance part="C6" gate="G$1" x="238.76" y="68.58"/>
 <instance part="CON-DEBUG" gate="A" x="147.32" y="127" rot="R180"/>
 <instance part="GND17" gate="1" x="157.48" y="116.84"/>
-<instance part="T1" gate="A" x="109.22" y="68.58" rot="R90"/>
+<instance part="T1" gate="A" x="109.22" y="68.58" rot="MR90"/>
 <instance part="T1" gate="B" x="154.94" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="151.13" y="74.93" size="1.778" layer="96"/>
 <attribute name="NAME" x="151.13" y="77.47" size="1.778" layer="95"/>
 </instance>
-<instance part="GND18" gate="1" x="106.68" y="55.88"/>
+<instance part="GND18" gate="1" x="111.76" y="55.88" rot="MR0"/>
 <instance part="P+13" gate="VCC" x="93.98" y="43.18"/>
 <instance part="JP-BT-POWER" gate="1" x="45.72" y="20.32" rot="R270"/>
 <instance part="P+14" gate="VCC" x="40.64" y="38.1" rot="MR0"/>
@@ -10646,7 +10646,7 @@ by R. Vogg  15.March.2002</description>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="T1" gate="A" pin="G"/>
-<wire x1="106.68" y1="58.42" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="58.42" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="2">
@@ -11050,7 +11050,6 @@ by R. Vogg  15.March.2002</description>
 </net>
 <net name="BAT-RAW-VCC" class="1">
 <segment>
-<pinref part="T1" gate="A" pin="S"/>
 <pinref part="CON-BAT" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="71.12" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="VBAT"/>
@@ -11059,6 +11058,7 @@ by R. Vogg  15.March.2002</description>
 <wire x1="88.9" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
 <junction x="88.9" y="71.12"/>
 <label x="73.66" y="71.12" size="1.778" layer="95"/>
+<pinref part="T1" gate="A" pin="D"/>
 <wire x1="104.14" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
 <junction x="96.52" y="71.12"/>
 </segment>
@@ -11135,10 +11135,10 @@ by R. Vogg  15.March.2002</description>
 <wire x1="119.38" y1="63.5" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="71.12" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
-<junction x="116.84" y="71.12"/>
 <pinref part="T1" gate="B" pin="S"/>
-<pinref part="T1" gate="A" pin="D"/>
-<wire x1="114.3" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="T1" gate="A" pin="S"/>
+<wire x1="116.84" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<junction x="116.84" y="71.12"/>
 </segment>
 </net>
 </nets>
