@@ -10516,7 +10516,7 @@ high speed (Philips)</description>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="Q4" library="transistor-small-signal" deviceset="BSS123" device="" value="TSM2302CX"/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
