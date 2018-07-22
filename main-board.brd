@@ -1916,6 +1916,8 @@ Based on the following sources:
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="BASIC" current="yes"/>
+<variantdef name="DEBUG"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.3" drill="0.3">
@@ -2154,7 +2156,7 @@ design rules under a new name.</description>
 <element name="JP-BT-POWER" library="jumper" package="SJ_2" value="" x="5.715" y="12.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="8.89" y="8.89" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="CON-DEBUG" library="pinhead" package="1X04" value="PINHEAD" x="18.7325" y="14.2875" smashed="yes" rot="R180">
+<element name="CON-DEBUG" library="pinhead" package="1X04" value="PINHEAD" x="18.7325" y="14.2875" populate="no" smashed="yes" rot="R180">
 <attribute name="VALUE" x="23.8125" y="17.4625" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="CON-OPTO" library="pinhead" package="1X03" value="PINHEAD" x="33.3375" y="2.2225" smashed="yes">
@@ -2297,7 +2299,7 @@ design rules under a new name.</description>
 <element name="S-OFF" library="switch-tact" package="DTSM-3" value="P-DT2112C" x="29.845" y="15.24" smashed="yes" rot="R180">
 <attribute name="VALUE" x="32.385" y="19.05" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="D1" library="diode" package="R0805" value="1N4148-0805" x="20.32" y="2.8575" rot="MR180"/>
+<element name="D1" library="diode" package="R0805" value="1N4148-0805" x="20.32" y="2.8575" populate="no" rot="MR180"/>
 </elements>
 <signals>
 <signal name="CR1">

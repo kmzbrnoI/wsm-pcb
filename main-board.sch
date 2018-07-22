@@ -10457,6 +10457,8 @@ high speed (Philips)</description>
 <attribute name="VERSION" value="1.1"/>
 </attributes>
 <variantdefs>
+<variantdef name="BASIC" current="yes"/>
+<variantdef name="DEBUG"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.3" drill="0.3">
@@ -10552,7 +10554,9 @@ high speed (Philips)</description>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
-<part name="CON-DEBUG" library="pinhead" deviceset="PINHD-1X4" device="" value="PINHEAD"/>
+<part name="CON-DEBUG" library="pinhead" deviceset="PINHD-1X4" device="" value="PINHEAD">
+<variant name="BASIC" populate="no"/>
+</part>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor-fet" deviceset="IRF7306" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10562,7 +10566,9 @@ high speed (Philips)</description>
 <part name="S-ON" library="switch-tact" deviceset="DTSM-3" device="" value="P-DT2112C"/>
 <part name="S-OFF" library="switch-tact" deviceset="DTSM-3" device="" value="P-DT2112C"/>
 <part name="SUPPLY4" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
-<part name="D1" library="diode" deviceset="1N4148" device="-0805"/>
+<part name="D1" library="diode" deviceset="1N4148" device="-0805">
+<variant name="BASIC" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
