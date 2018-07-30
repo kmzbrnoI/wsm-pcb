@@ -10454,7 +10454,7 @@ high speed (Philips)</description>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Jan Horacek"/>
-<attribute name="VERSION" value="1.1"/>
+<attribute name="VERSION" value="1.2"/>
 </attributes>
 <variantdefs>
 <variantdef name="BASIC"/>
