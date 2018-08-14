@@ -10479,8 +10479,8 @@ high speed (Philips)</description>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="RED"/>
-<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="YELLOW"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805" value="YEL"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805" value="GR"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
