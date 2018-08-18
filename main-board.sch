@@ -10501,8 +10501,8 @@ high speed (Philips)</description>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="680K"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="200K"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="4K"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
@@ -10571,7 +10571,7 @@ high speed (Philips)</description>
 </part>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="2k"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="2K"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
