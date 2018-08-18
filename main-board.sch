@@ -10454,7 +10454,7 @@ high speed (Philips)</description>
 </libraries>
 <attributes>
 <attribute name="AUTHOR" value="Jan Horacek"/>
-<attribute name="VERSION" value="1.2"/>
+<attribute name="VERSION" value="1.3"/>
 </attributes>
 <variantdefs>
 <variantdef name="BASIC"/>
@@ -10538,8 +10538,8 @@ high speed (Philips)</description>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="100K"/>
 <part name="Q4" library="transistor-small-signal" deviceset="BSS123" device="" value="TSM2302CX"/>
 <part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10569,6 +10569,10 @@ high speed (Philips)</description>
 <part name="D1" library="diode" deviceset="1N4148" device="-0805">
 <variant name="BASIC" populate="no"/>
 </part>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="2k"/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10688,6 +10692,10 @@ high speed (Philips)</description>
 <attribute name="NAME" x="42.6974" y="55.88" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="50.5714" y="48.26" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C10" gate="G$1" x="193.04" y="48.26"/>
+<instance part="GND19" gate="1" x="193.04" y="33.02"/>
+<instance part="R16" gate="G$1" x="248.92" y="66.04" rot="R270"/>
+<instance part="GND20" gate="1" x="248.92" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -10877,6 +10885,16 @@ high speed (Philips)</description>
 <pinref part="T1" gate="A" pin="G"/>
 <wire x1="111.76" y1="58.42" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="35.56" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="58.42" x2="248.92" y2="60.96" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="2">
 <segment>
@@ -10938,6 +10956,8 @@ high speed (Philips)</description>
 <wire x1="238.76" y1="71.12" x2="238.76" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <junction x="238.76" y="71.12"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="71.12" x2="248.92" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -11266,7 +11286,9 @@ high speed (Philips)</description>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="53.34" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
-<label x="193.04" y="53.34" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="193.04" y="53.34" size="1.778" layer="95" xref="yes"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="50.8" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB2(SS/OC1B)"/>
