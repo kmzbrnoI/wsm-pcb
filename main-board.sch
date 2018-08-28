@@ -10493,7 +10493,7 @@ high speed (Philips)</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="CON-OPTO" library="pinhead" deviceset="PINHD-1X3" device="" value="PINHEAD"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="3K9"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="360R"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="CON-PROG" library="pinhead" deviceset="PINHD-2X3" device="" value="PINHEAD"/>
@@ -10501,7 +10501,7 @@ high speed (Philips)</description>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="4K"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="3K9"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="10K"/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device="" value="VCC-BAT"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
