@@ -10509,7 +10509,7 @@ high speed (Philips)</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="IC2" library="mcp73831" deviceset="MCP73831" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="4K"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="3K9"/>
 <part name="P+9" library="supply1" deviceset="VCC/2" device="" value="VCC-USB"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="CON-BAT" library="pinhead" deviceset="PINHD-1X2" device="" value="PINHEAD"/>
@@ -10535,7 +10535,7 @@ high speed (Philips)</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805" value="BLUE"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1K"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="2K"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="200k"/>

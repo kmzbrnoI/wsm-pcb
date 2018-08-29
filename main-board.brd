@@ -2214,7 +2214,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="33.02" y="12.3825" size="1.016" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="33.3375" y="16.1925" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R14" library="rcl" package="R0805" value="1K" x="40.005" y="3.175" smashed="yes" rot="MR270">
+<element name="R14" library="rcl" package="R0805" value="2K" x="40.005" y="3.175" smashed="yes" rot="MR270">
 <attribute name="NAME" x="39.0525" y="1.5875" size="1.016" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="40.64" y="1.5875" size="1.27" layer="28" rot="MR270"/>
 </element>
@@ -2249,7 +2249,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="36.83" y="1.5875" size="1.016" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="38.735" y="1.5875" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R9" library="rcl" package="R0805" value="4K" x="39.0525" y="5.715" smashed="yes" rot="MR0">
+<element name="R9" library="rcl" package="R0805" value="3K9" x="39.0525" y="5.715" smashed="yes" rot="MR0">
 <attribute name="NAME" x="37.465" y="6.6675" size="1.016" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="36.5125" y="4.445" size="1.27" layer="28" rot="MR90"/>
 </element>
