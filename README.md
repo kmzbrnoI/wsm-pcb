@@ -30,5 +30,9 @@ This PCB was designed in Eagle 9.
 
 ## License
 
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0"><img
+alt="Creative Commons License" style="border-width:0"
+src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a>
+
 This project is released under the [Creative Commons Attribution-ShareAlike 4.0
 ](https://creativecommons.org/licenses/by-sa/4.0) license.
