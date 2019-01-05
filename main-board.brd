@@ -169,9 +169,9 @@
 <text x="4.445" y="15.5575" size="1.016" layer="25">BAT</text>
 <text x="8.255" y="9.525" size="1.016" layer="25" rot="R90">VCC</text>
 <text x="40.3225" y="11.7475" size="1.27" layer="25" rot="R180" align="top-center">ON</text>
-<text x="48.26" y="16.8275" size="1.6764" layer="26" rot="MR270">1.3</text>
+<text x="48.26" y="16.8275" size="1.6764" layer="26" rot="MR270">1.4</text>
 <text x="48.26" y="10.795" size="1.6764" layer="26" rot="MR270">WSM</text>
-<text x="5.08" y="13.335" size="1.4224" layer="26" rot="MR270">JH 2018</text>
+<text x="5.08" y="13.335" size="1.4224" layer="26" rot="MR270">JH 2019</text>
 <text x="29.21" y="2.2225" size="1.27" layer="25" rot="R180" align="center-left">MEAS.</text>
 <text x="38.1" y="3.81" size="1.27" layer="25" rot="R270" align="top-right">VCC</text>
 </plain>
