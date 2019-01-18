@@ -10733,9 +10733,9 @@ high speed (Philips)</description>
 <instance part="GND10" gate="1" x="33.02" y="55.88" smashed="yes">
 <attribute name="VALUE" x="30.48" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="CON-BAT" gate="G$1" x="99.06" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.345" y="74.93" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="104.14" y="74.93" size="1.778" layer="96" rot="R90"/>
+<instance part="CON-BAT" gate="G$1" x="96.52" y="63.5" smashed="yes" rot="MR0">
+<attribute name="NAME" x="95.25" y="69.215" size="1.778" layer="95"/>
+<attribute name="VALUE" x="95.25" y="58.42" size="1.778" layer="96"/>
 </instance>
 <instance part="GND11" gate="1" x="99.06" y="55.88" smashed="yes">
 <attribute name="VALUE" x="96.52" y="53.34" size="1.778" layer="96"/>
@@ -10863,9 +10863,9 @@ high speed (Philips)</description>
 <instance part="P+15" gate="VCC" x="170.18" y="76.2" smashed="yes">
 <attribute name="VALUE" x="167.64" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C11" gate="G$1" x="88.9" y="68.58" smashed="yes">
-<attribute name="NAME" x="90.424" y="68.961" size="1.778" layer="95"/>
-<attribute name="VALUE" x="90.424" y="63.881" size="1.778" layer="96"/>
+<instance part="C11" gate="G$1" x="86.36" y="68.58" smashed="yes">
+<attribute name="NAME" x="87.884" y="68.961" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.884" y="63.881" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="33.02" y="66.04" smashed="yes">
 <attribute name="NAME" x="34.544" y="66.421" size="1.778" layer="95"/>
@@ -10882,9 +10882,9 @@ high speed (Philips)</description>
 <instance part="GND17" gate="1" x="157.48" y="116.84" smashed="yes">
 <attribute name="VALUE" x="154.94" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="T1" gate="A" x="109.22" y="68.58" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="105.41" y="57.15" size="1.778" layer="96" rot="MR90"/>
-<attribute name="NAME" x="107.95" y="57.15" size="1.778" layer="95" rot="MR90"/>
+<instance part="T1" gate="A" x="109.22" y="63.5" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="107.95" y="72.39" size="1.778" layer="96" rot="MR90"/>
+<attribute name="NAME" x="110.49" y="72.39" size="1.778" layer="95" rot="MR90"/>
 </instance>
 <instance part="T1" gate="B" x="154.94" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="151.13" y="74.93" size="1.778" layer="96"/>
@@ -11027,8 +11027,8 @@ high speed (Philips)</description>
 <wire x1="81.28" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="66.04" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
 <junction x="83.82" y="60.96"/>
-<wire x1="83.82" y1="60.96" x2="88.9" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="60.96" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -11038,7 +11038,7 @@ high speed (Philips)</description>
 </segment>
 <segment>
 <pinref part="CON-BAT" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="58.42" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="58.42" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -11119,7 +11119,7 @@ high speed (Philips)</description>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
 <pinref part="T1" gate="A" pin="G"/>
-<wire x1="111.76" y1="58.42" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="58.42" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -11532,21 +11532,6 @@ high speed (Philips)</description>
 <label x="96.52" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="BAT-RAW-VCC" class="1">
-<segment>
-<pinref part="CON-BAT" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="71.12" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VBAT"/>
-<wire x1="68.58" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
-<junction x="88.9" y="71.12"/>
-<label x="73.66" y="71.12" size="1.778" layer="95"/>
-<pinref part="T1" gate="A" pin="D"/>
-<wire x1="104.14" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
-<junction x="96.52" y="71.12"/>
-</segment>
-</net>
 <net name="LED-RED" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -11620,9 +11605,18 @@ high speed (Philips)</description>
 <wire x1="116.84" y1="63.5" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="71.12" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="T1" gate="B" pin="S"/>
-<pinref part="T1" gate="A" pin="S"/>
+<pinref part="IC2" gate="G$1" pin="VBAT"/>
+<wire x1="68.58" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<junction x="86.36" y="71.12"/>
+<label x="127" y="71.12" size="1.778" layer="95"/>
 <wire x1="116.84" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
 <junction x="116.84" y="71.12"/>
+<pinref part="T1" gate="A" pin="S"/>
+<wire x1="114.3" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="66.04" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<junction x="114.3" y="71.12"/>
+<label x="71.12" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHARGE-STAT-INT" class="0">
@@ -11634,6 +11628,13 @@ high speed (Philips)</description>
 <wire x1="45.72" y1="63.5" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
 <junction x="45.72" y="63.5"/>
 <pinref part="D1" gate="A" pin="C"/>
+</segment>
+</net>
+<net name="BAT-RAW-VCC" class="1">
+<segment>
+<pinref part="T1" gate="A" pin="D"/>
+<pinref part="CON-BAT" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
